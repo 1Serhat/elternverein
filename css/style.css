@@ -156,9 +156,32 @@
   width: 60%;
   margin: 0 auto;
 }
+.text .events{
+  color: #fff;
+  background-color: var(--green);
+  outline: none;
+  display: block;
+  margin-top: 30px;
+  padding: 18px 40px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+.text .events:hover{
+  background-color: #648023;
+  color: var(--white);
+  transition: 0.4s;
+}
 @media screen and (max-width: 768px) {
   .aktivitaeten .row {
     grid-template-columns: 1fr;
+    grid-auto-flow: wra;
+  }
+  .row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
   }
 }
 
